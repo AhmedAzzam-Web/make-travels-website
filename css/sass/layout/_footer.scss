@@ -1,0 +1,111 @@
+.footer {
+    margin: 0 0 2rem !important;
+    .footer-container{
+
+        .first-box{
+            .paper-icon{
+                color: $primary;
+            }
+            .icons{
+                .footer-icon{
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    color: $primary;
+                    border: 2px solid $primary;
+                    transition: $transition;
+                    &:hover {
+                        color: $black !important;
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+
+        %footer-arrow {
+            color: $primary;
+            font-size: 0.89rem;
+        }
+
+        .second-box {
+            .my-footer-nav{
+                .my-nav-item{
+
+                    .arrow-link{
+                        transition: $transition;
+                    }
+                    .footer-arrows{
+                        @extend %footer-arrow;
+                    }
+
+                    &:hover{
+                        .my-footer-link{
+                            color: $primary;
+                        }
+                        .arrow-link{
+                            padding: 0 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-box {
+            .my-footer-nav{
+                .my-nav-item{
+                    .my-footer-link{
+                        .footer-contact-icons{
+                            @extend %footer-arrow;
+                        }
+                    }
+                }
+            }
+        }
+
+        .forth-box {
+            .my-form{
+                .footer-form-label{
+                    cursor: text;
+                }
+                .email{
+                    font-size: 1.08rem;
+                    background-color: $black;
+                    outline: none;
+                    border: $border;
+                    border-radius: 2rem;
+                    padding: 10px 15px 11.5px !important;
+                }
+            }
+        }
+    }
+
+}
+
+// footer the created by section
+.credit{
+    background-color: $bg-color;
+    .credit-content{
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+    .creatre{
+        color: $primary;
+    }
+}
+// footer the created by section
+
+@media (max-width: 768px) {
+    .credit {
+        .credit-content {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .credit {
+        .credit-content {
+            font-size: 0.98rem;
+        }
+    }
+}

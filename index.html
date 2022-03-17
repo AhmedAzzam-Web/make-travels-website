@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create a sass project</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate on scroll -->
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+
+    <!-- header section start -->
+    <header class="home" id="home">
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container-lg container-fluid mycontainer p-lg-0 d-flex align-items-center justify-content-between">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-show" aria-controls="toggle-show" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <a class="navbar-brand pb=lg-1 p-0 brand fs-3 fw-bold m-0 link-js" data-aos="fade-right" data-aos-delay="150" href="#home" data-section=".home"><i class="fa-solid px-1 paper-icon fa-paper-plane"></i>Travel</a>
+
+          <a href="#" class="main-link text-capitalize rounded-pill m-0 p-0 order-lg-last link-js" data-section=".footer"  data-aos="zoom-in-left" data-aos-delay="1150">book now</a>
+
+          <div class="collapse navbar-collapse show-with-transition" id="toggle-show">
+
+            <ul class="navbar-nav text-capitalize ulLinks m-auto text-light">
+
+              <li class="nav-item px-lg-3" data-aos="zoom-in-left" data-aos-delay="150">
+                <a class="nav-link lead link-js p-0" aria-current="landing page" href="#home" data-section=".home">home</a>
+              </li>
+
+              <li class="nav-item px-lg-3" data-aos="zoom-in-left" data-aos-delay="300">
+                <a class="nav-link lead link-js p-0" href="#about" data-section=".about">about</a>
+              </li>
+
+              <li class="nav-item px-lg-3" data-aos="zoom-in-left" data-aos-delay="450">
+                <a class="nav-link lead link-js p-0" href="#destination" data-section=".destination">destination</a>
+              </li>
+
+              <li class="nav-item px-lg-3" data-aos="zoom-in-left" data-aos-delay="600">
+                <a class="nav-link lead link-js p-0" href="#services" data-section=".services">services</a>
+              </li>
+              
+              <li class="nav-item px-lg-3" data-aos="zoom-in-left" data-aos-delay="750">
+                <a class="nav-link lead link-js p-0" href="#gallery" data-section=".gallery">gallery</a>
+              </li>
+
+              <li class="nav-item px-lg-3" data-aos="zoom-in-left" data-aos-delay="900">
+                <a class="nav-link lead link-js p-0" href="#blog" data-section=".blog">blogs</a>
+              </li>
+
+            </ul>
+
+          </div>
+          
+          
+        </div>
+
+      </nav>
+
+    </header>
+    <!-- header section end -->
+
+    <!-- landing page start -->
+    <section class="landing-page d-grid text-center align-content-center">
+
+      <div class="container">
+
+        <span data-aos="fade-up" data-aos-delay="150">follow us</span>
+        <h1 data-aos="fade-up" data-aos-delay="300">Hi, I'm Ahmed Azzam</h1>
+        <p data-aos="fade-up" data-aos-delay="450" class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quam quis quas architecto maiores sint? Voluptate omnis error harum. Voluptas fugit cum maxime asperiores.</p>
+        <a data-aos="fade-up" data-aos-delay="600" href="#" class="main-link text-capitalize rounded-pill link-js" data-section=".blog">book now</a>
+
+      </div>
+
+    </section>
+    <!-- landing page end -->
+
+    <!-- booking form section start -->
+    <aside class="book-form position-relative">
+
+      <form action="" method="post" class="my-book-form">
+
+        <div data-aos="zoom-in" data-aos-delay="150" class="input-box">
+          <span class="form-label">where to?</span>
+          <input type="text" name="place name" placeholder="place name" >
+        </div>
+
+        <div data-aos="zoom-in" data-aos-delay="300" class="input-box">
+          <span class="form-label">when?</span>
+          <input type="date" class="pe-3" name="data time">
+        </div>
+
+        <div data-aos="zoom-in" data-aos-delay="450" class="input-box">
+          <span class="form-label">how many?</span>
+          <input type="number" name="number of guests" placeholder="number of travellers">
+        </div>
+
+        <input data-aos="zoom-in" data-aos-delay="650" type="submit" value="find now" class="main-link text-capitalize rounded-pill btn-submit">
+
+        <!-- <span class="badge bg-secondary position-absolute top-0 fw-normal my-badge">submit Disabled</span> -->
+        
+      </form>
+
+    </aside>
+    <!-- booking form section end -->
+
+    <!-- about section start -->
+    <section class="about" id="about">
+      
+      <div class="container-lg container-fluid d-flex align-items-center justify-content-between flex-wrap flex-lg-nowrap p-2 about-container">
+
+          <div data-aos="fade-right" data-aos-delay="300" id="carouselIndicators" class="carousel slide my-video-slider" data-bs-ride="carousel">
+
+            <div class="carousel-indicators my-indicators position-absolute">
+
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active circle-indicator" aria-current="true" aria-label="Slide 1"></button>
+
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="circle-indicator" aria-label="Slide 2"></button>
+              
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" class="circle-indicator" aria-label="Slide 3"></button>
+            
+            </div>
+
+            <div class="carousel-inner my-video-container position-relative">
+
+              <div class="carousel-item active each-video-item">
+                <video class="video" src="./imgs/about-vid-1.mp4" autoplay muted loop></video>
+              </div>
+
+              <div class="carousel-item">
+                <video class="video" src="./imgs/about-vid-2.mp4" autoplay muted loop></video>
+              </div>
+
+              <div class="carousel-item">
+                <video class="video"  src="./imgs/about-vid-3.mp4" autoplay muted loop></video>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        <div data-aos="fade-left" data-aos-delay="600" class="video-content text-capitalize">
+          <span class="above-head-video fs-5">why choose us?</span>
+          <h2 class="text-white head-video">nature's majesty awaits you</h2>
+          <p class="text-white-50 video-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, obcaecati magni. Placeat praesentium nam impedit. plus still i feel good</p>
+          <a href="#" class="main-link text-capitalize rounded-pill video-link link-js" data-section=".blog">read more</a>
+        </div>
+        
+      </div>
+
+    </section>
+    <!-- about section end -->
+
+    <!-- start Our Destination -->
+    <section class="destination" id="destination">
+      <div class="container-lg container-fluid destination-container">
+
+        <!-- heading section component in global components -->
+        <div class="heading-section-container text-center mx-auto">
+          <span class="text-capitalize sub-heading-sect">our destination</span>
+          <h3 class="text-capitalize heading-section text-light pb-5">make yours destination</h3>
+        </div>
+
+        <div class="row g-3">
+
+          <!-- card 1 -->
+          <div data-aos="fade-up" data-aos-delay="150" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-1.jpg" class="card-img-top my-card-img" alt="./imgs/des-1.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div data-aos="fade-up" data-aos-delay="300" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-2.jpg" class="card-img-top my-card-img" alt="./imgs/des-2.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div data-aos="fade-up" data-aos-delay="450" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-3.jpg" class="card-img-top my-card-img" alt="./imgs/des-3.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+          <!-- card 4 -->
+          <div data-aos="fade-up" data-aos-delay="600" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-4.jpg" class="card-img-top my-card-img" alt="./imgs/des-4.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+
+          <!-- card 5 -->
+          <div data-aos="fade-up" data-aos-delay="750" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-5.jpg" class="card-img-top my-card-img" alt="./imgs/des-5.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+
+          <!-- card 6 -->
+          <div data-aos="fade-up" data-aos-delay="900" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-6.jpg" class="card-img-top my-card-img" alt="./imgs/des-6.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+
+          <!-- card 7 -->
+          <div data-aos="fade-up" data-aos-delay="950" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-7.jpg" class="card-img-top my-card-img" alt="./imgs/des-7.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          
+          <!-- card 8 -->
+          <div data-aos="fade-up" data-aos-delay="1050" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-8.jpg" class="card-img-top my-card-img" alt="./imgs/des-8.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 8 -->
+
+          <!-- card 9 -->
+          <div data-aos="fade-up" data-aos-delay="1100" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              <div class="image-container">
+                <img src="./imgs/des-2.jpg" class="card-img-top my-card-img" alt="./imgs/des-8.jpg">
+              </div>
+              
+              <div class="card-body card-content">
+                <h5 class="card-title text-light text-capitalize my-card-head">tours & travel</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="btn card-link-container d-flex align-items-center justify-content-center">
+                  <a href="#" class="text-decoration-none text-capitalize card-link link-js" data-section=".home">read more</a>
+                  <i class="fa-solid fa-angle-right my-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 9 -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- end Our Destination -->
+
+    <!-- start our services section -->
+    <section class="services" id="services">
+
+      <div class="container-lg container-fluid services-container">
+        <!-- heading section component in global components -->
+        <div class="heading-section-container text-center mx-auto">
+          <span class="text-capitalize sub-heading-sect">our services</span>
+          <h3 class="text-capitalize heading-section text-light pb-5">countless expericences</h3>
+        </div>
+
+        <!-- start cards -->
+
+        <div class="row g-3">
+
+          <!-- card 1 -->
+          <div data-aos="zoom-in-up" data-aos-delay="150" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              
+              <i class="fa-solid fa-globe fa-fw fs-1 font-awesome-service mx-auto"></i>
+              
+              <div class="card-body card-content service-card-content px-0 service-card-content px-0">
+                <h5 class="card-title text-light text-capitalize my-card-head">worldwide</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div data-aos="zoom-in-up" data-aos-delay="300" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+
+              <i class="fa-solid fa-person-hiking fa-fw fs-1 font-awesome-service mx-auto"></i>
+              
+              <div class="card-body card-content service-card-content px-0">
+                <h5 class="card-title text-light text-capitalize my-card-head">adventures</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div data-aos="zoom-in-up" data-aos-delay="450" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              
+              <i class="fa-solid fa-utensils fa-fw fs-1 font-awesome-service mx-auto"></i>
+              
+              <div class="card-body card-content service-card-content px-0">
+                <h5 class="card-title text-light text-capitalize my-card-head">food & drinks</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+          <!-- card 4 -->
+          <div data-aos="zoom-in-up" data-aos-delay="600" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              
+              <i class="fa-solid fa-hotel fa-fw fs-1 font-awesome-service mx-auto"></i>
+              
+              <div class="card-body card-content service-card-content px-0">
+                <h5 class="card-title text-light text-capitalize my-card-head">affordable hotels</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+
+          <!-- card 5 -->
+          <div data-aos="zoom-in-up" data-aos-delay="750" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              
+              <i class="fa-solid fa-wallet fa-fw fs-1 font-awesome-service mx-auto"></i>
+              
+              <div class="card-body card-content service-card-content px-0">
+                <h5 class="card-title text-light text-capitalize my-card-head">affordable price</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+
+          <!-- card 6 -->
+          <div data-aos="zoom-in-up" data-aos-delay="900" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-center">
+              
+              <i class="fa-solid fa-headset fa-fw fs-1 font-awesome-service mx-auto"></i>
+              
+              <div class="card-body card-content service-card-content px-0">
+                <h5 class="card-title text-light text-capitalize my-card-head">24/7 support</h5>
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+
+        </div>
+
+        <!-- end cards -->
+
+      </div>
+
+    </section>
+    <!-- end our services section -->
+
+    <!-- start gallery section -->
+    <section class="gallery" id="gallery">
+
+      <div class="container-lg container-fluid gallery-container">
+        <!-- heading section component in global components -->
+        <div class="heading-section-container text-center mx-auto">
+          <span class="text-capitalize sub-heading-sect">our gallery</span>
+          <h3 class="text-capitalize heading-section text-light pb-3">we record memories</h3>
+        </div>
+
+        <div class="box">
+
+          <div data-aos="zoom-in-up" data-aos-delay="150" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-1.jpg" alt="gallery-img-1">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="300" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-2.jpg" alt="gallery-img-2">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="450" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-3.jpg" alt="gallery-img-3">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="600" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-4.jpg" alt="gallery-img-4">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="750" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-5.jpg" alt="gallery-img-5.jpg">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="900" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-6.jpg" alt="gallery-img-6">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="1150" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-7.jpg" alt="gallery-img-7">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="1300" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-8.jpg" alt="gallery-img-8">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-delay="150" class="image-container">
+            <img class="img-in-gallery" src="./imgs/gallery-img-9.jpg" alt="gallery-img-9">
+            <span class="text-capitalize text-white-50 d-block mt-2 mb-1 img-caption">travel spot</span>
+            <h5 class="text-capitalize text-white fw-bold">iceland</h5>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- end gallery section -->
+
+    <!-- testimonial section start -->
+    <div class="testimonial">
+      <div class="container-lg container-fluid">
+
+        <div class="testimonial-box d-flex align-items-center flex-wrap">
+
+          <div data-aos="fade-right" data-aos-delay="150" class="testimonial-content">
+            <!-- heading section component in global components -->
+            <div class="heading-section-container text-start mx-auto">
+              <span class="text-capitalize sub-heading-sect">testimonials</span>
+              <h3 class="text-capitalize heading-section fs-2 fw-bold text-light m-0">good news from our clients</h3>
+              <p class="testimonial-head-text text-white-50 pt-3 pb-2">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Assumenda Laudantium Corporis Fugiat Quae Unde Perspiciatis Similique Ab Modi Enim Consequatur Aperiam Cumque Distinctio Facilis Sit, Debitis Possimus Asperiores Non Harum.</p>
+            </div>
+
+          </div>
+
+            <!-- start cards -->
+
+        <div data-aos="fade-left" data-aos-delay="300" class="testimonial-cards row g-3">
+
+          <!-- card 1 -->
+          <div class="box col-12 col-sm-6">
+            <div class="card my-card text-start">
+              
+              <p class="card-text text-white-50 py-2 text-capitalize user-text m-0 pt-0">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              
+              <div class="d-flex align-items-center justify-content-start card-body card-content p-0 user-content">
+                <img src="./imgs/pic-1.png" class="rounded-circle" alt="">
+
+                <div class="user-content ps-3">
+                  <h5 class="card-title text-light fw-bold text-capitalize user-title m-0">john deo</h5>
+                  <span class="text-capitalize text-white-50 user-description">designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div class="box col-12 col-sm-6">
+            <div class="card my-card text-start">
+
+              <p class="card-text text-white-50 text-capitalize user-text m-0">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              
+              <div class="d-flex align-items-center card-body card-content user-content p-0">
+                
+                <div class="image">
+                  <img src="./imgs/pic-2.png" class="rounded-circle" alt="">
+                </div>
+
+                <div class="user-content ps-3">
+                  <h5 class="card-title text-light fw-bold text-capitalize user-title m-0">john deo</h5>
+                  <span class="text-capitalize text-white-50 user-description">designer</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div class="box col-12 col-sm-6">
+            <div class="card my-card text-start">
+              
+              <p class="card-text text-white-50 py-2 text-capitalize user-text m-0 pt-0">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              
+              <div class="d-flex align-items-center justify-content-start card-body card-content user-content p-0">
+                <div class="image">
+                  <img src="./imgs/pic-3.png" class="rounded-circle" alt="">
+                </div>
+
+                <div class="user-content ps-3">
+                  <h5 class="card-title text-light fw-bold text-capitalize user-title m-0">john deo</h5>
+                  <span class="text-capitalize text-white-50 user-description">designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+          <!-- card 4 -->
+          <div class="box col-12 col-sm-6">
+            <div class="card my-card text-start">
+              
+              <p class="card-text text-white-50 py-2 text-capitalize user-text m-0 pt-0">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam, Cumque.</p>
+              
+              <div class="d-flex align-items-center justify-content-start gx-5 card-body card-content user-content p-0">
+                <div class="image">
+                  <img src="./imgs/pic-4.png" class="rounded-circle" alt="">
+                </div>
+
+                <div class="user-content ps-3">
+                  <h5 class="card-title text-light fw-bold text-capitalize user-title m-0">john deo</h5>
+                  <span class="text-capitalize text-white-50 user-description">designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+
+        </div>
+
+        <!-- end cards -->
+
+        </div>
+
+      </div>
+    </div>
+    <!-- testimonial section end -->
+
+    <!-- start blog section -->
+    <section class="blog" id="blog">
+      <div class="container-lg container-fluid blog-container">
+
+        <!-- heading section component in global components -->
+        <div class="heading-section-container text-center mx-auto">
+          <span class="text-capitalize sub-heading-sect">blogs & posts</span>
+          <h3 class="text-capitalize heading-section text-light pb-5">we untold stories</h3>
+        </div>
+
+        <div class="row g-3">
+
+          <!-- card 1 -->
+          <div data-aos="fade-up" data-aos-delay="150" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-start">
+              <div class="image-container">
+                <img src="./imgs/blog-1.jpg" class="card-img-top my-card-img" alt="./imgs/blog-1.jpg">
+              </div>
+              
+              <div class="card-body card-content blog-card">
+                <a href="#" class="text-decoration-none card-title text-light text-capitalize my-card-head">life is a journey, not a destination</a>
+
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur, Natus!</p>
+                <div class="btn card-links p-0 d-flex align-items-center justify-content-between">
+
+                  <a href="#" class="text-decoration-none text-capitalize blog-link text-white-50"><i class="fa-solid fa-clock pe-2 font-awesome-blog"></i>21st may, 2021</a>
+
+                  <a href="#" class="text-decoration-none text-capitalize blog-link text-white-50"><i class="fa-solid fa-user pe-1 font-awesome-blog"></i> by admin</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div data-aos="fade-up" data-aos-delay="300" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-start">
+              <div class="image-container">
+                <img src="./imgs/blog-2.jpg" class="card-img-top my-card-img" alt="./imgs/blog-2.jpg">
+              </div>
+              
+              <div class="card-body card-content blog-card">
+                <a href="#" class="text-decoration-none card-title text-light text-capitalize my-card-head">life is a journey, not a destination</a>
+
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur, Natus!</p>
+                <div class="btn card-links p-0 d-flex align-items-center justify-content-between">
+
+                  <a href="#" class="text-decoration-none text-capitalize blog-link text-white-50"><i class="fa-solid fa-clock pe-2 font-awesome-blog"></i>21st may, 2021</a>
+
+                  <a href="#" class="text-decoration-none text-capitalize blog-link text-white-50"><i class="fa-solid fa-user pe-1 font-awesome-blog"></i> by admin</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div data-aos="fade-up" data-aos-delay="450" class="box col-12 col-sm-6 col-lg-4">
+            <div class="card my-card text-start">
+              <div class="image-container">
+                <img src="./imgs/blog-3.jpg" class="card-img-top my-card-img" alt="./imgs/blog-3.jpg">
+              </div>
+              
+              <div class="card-body card-content blog-card">
+                <a href="#" class="text-decoration-none card-title text-light text-capitalize my-card-head">life is a journey, not a destination</a>
+
+                <p class="card-text text-white-50 py-2 text-capitalize my-card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur, Natus!</p>
+                <div class="btn card-links p-0 d-flex align-items-center justify-content-between">
+
+                  <a href="#" class="text-decoration-none text-capitalize blog-link text-white-50"><i class="fa-solid fa-clock pe-2 font-awesome-blog"></i>21st may, 2021</a>
+
+                  <a href="#" class="text-decoration-none text-capitalize blog-link text-white-50"><i class="fa-solid fa-user pe-1 font-awesome-blog"></i> by admin</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- end blog section -->
+
+    <!-- start adventures section -->
+    <section class="adventure" id="adventure">
+
+      <div class="container-lg container-fluid adventure-container">
+
+        <div class="adventure-content m-auto">
+
+          <!-- heading section component in global components -->
+          <div class="heading-section-container text-center mx-auto" data-aos="zoom-in-up" data-aos-delay="150">
+            <span class="text-capitalize sub-heading-sect">start your adventures</span>
+            <h3 class="text-capitalize heading-section fs-2 fw-bold text-light m-0">let's explore this world</h3>
+            <p class="adventure-head-text text-white-50 pt-3 pb-2">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Earum Voluptatum Praesentium Amet Quibusdam Quam Officia Suscipit Odio.</p>
+
+            <div class="order-lg-last">
+              <a href="#" class="main-link text-capitalize rounded-pill link-js" data-section=".home">book now</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- end adventures section -->
+
+    <!-- start footer section -->
+    <footer class="footer">
+      <div class="container-lg container-fluid footer-container">
+
+        <div class="row g-4">
+
+          <div data-aos="fade-up" data-aos-delay="150" class="col-12 col-sm-6 col-lg-3 first-box">
+            <a class="navbar-brand d-block p-0 pb-lg-3 brand fs-3 fw-bold text-white link-js" data-section=".home" href="#home"><i class="fa-solid pe-2 paper-icon fa-paper-plane"></i>Travel</a>
+  
+            <p class="text-white-50 text-capitalize py-2">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Obcaecati, Ad?</p>
+  
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f me-1 fa-fw fs-6 d-flex d-inline-flex align-items-center justify-content-center rounded-circle footer-icon"></i>
+  
+              <i class="fa-brands fa-twitter mx-1 fa-fw fs-6 d-flex d-inline-flex align-items-center justify-content-center rounded-circle footer-icon"></i>
+              
+              <i class="fa-brands fa-instagram mx-1 fa-fw fs-6 d-flex d-inline-flex align-items-center justify-content-center rounded-circle footer-icon"></i>
+              
+              <i class="fa-brands fa-linkedin mx-1 fa-fw fs-6 d-flex d-inline-flex align-items-center justify-content-center rounded-circle footer-icon"></i>
+            </div>
+
+          </div>
+  
+          <div data-aos="fade-up" data-aos-delay="300" class="col-12 col-sm-6 col-lg-3 second-box">
+            <p class="navbar-brand p-0 pb-lg-3 brand fs-3 fw-bold m-0 text-white text-capitalize">quick links</p>
+  
+              <ul class="nav flex-column py-2 my-footer-nav">
+
+                <li class="nav-item mb-3 text-capitalize my-nav-item">
+                  <a href="#home" class="nav-link p-0 text-white-50 my-footer-link link-js" data-section=".home">
+                    <i class="fa-solid fa-arrow-right pe-1 footer-arrows"></i>
+                    <span class="arrow-link">home</span>
+                  </a>
+                </li>
+
+                <li class="nav-item mb-3 text-capitalize my-nav-item">
+                  <a href="#about" class="nav-link p-0 text-white-50 my-footer-link link-js" data-section=".about">
+                    <i class="fa-solid fa-arrow-right pe-1 footer-arrows"></i>
+                    <span class="arrow-link">about</span>
+                  </a>
+                </li>
+
+                <li class="nav-item mb-3 text-capitalize my-nav-item">
+                  <a href="#destination" class="nav-link p-0 text-white-50 my-footer-link link-js" data-section=".destination">
+                    <i class="fa-solid fa-arrow-right pe-1 footer-arrows"></i>
+                    <span class="arrow-link">destination</span>
+                  </a>
+                </li>
+
+                <li class="nav-item mb-3 text-capitalize my-nav-item">
+                  <a href="#services" class="nav-link p-0 text-white-50 my-footer-link link-js" data-section=".services">
+                    <i class="fa-solid fa-arrow-right pe-1 footer-arrows"></i>
+                    <span class="arrow-link">services</span>
+                  </a>
+                </li>
+
+                <li class="nav-item mb-3 text-capitalize my-nav-item">
+                  <a href="#gallery" class="nav-link p-0 text-white-50 my-footer-link link-js" data-section=".gallery">
+                    <i class="fa-solid fa-arrow-right pe-1 footer-arrows"></i>
+                    <span class="arrow-link">gallery</span>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize my-nav-item">
+                  <a href="#blog" class="nav-link p-0 text-white-50 my-footer-link link-js" data-section=".blog">
+                    <i class="fa-solid fa-arrow-right pe-1 footer-arrows"></i>
+                    <span class="arrow-link">blogs</span>
+                  </a>
+                </li>
+
+              </ul>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="450" class="col-12 col-sm-6 col-lg-3 third-box">
+            <p class="navbar-brand p-0 pb-lg-3 brand fs-3 fw-bold m-0 text-white text-capitalize">contact info</p>
+  
+              <ul class="nav flex-column py-2 my-footer-nav">
+
+                <li class="nav-item mb-4 text-capitalize my-nav-item">
+                  <div class="nav-link p-0 text-white-50 my-footer-link">
+                    <i class="fa-solid fa-map pe-1 footer-contact-icons"></i>
+                    <span class="arrow-link text-capitalize">egypt, sharkia</span>
+                  </div>
+                </li>
+
+                <li class="nav-item mb-4 text-capitalize my-nav-item">
+                  <div class="nav-link p-0 text-white-50 my-footer-link">
+                    <i class="fa-solid fa-phone pe-1 footer-contact-icons"></i>
+                    <span class="arrow-link">+20 101-856-3517</span>
+                  </div>
+                </li>
+
+                <li class="nav-item mb-4 my-nav-item">
+                  <div class="nav-link p-0 text-white-50 my-footer-link">
+                    <i class="fa-solid fa-envelope pe-1 footer-contact-icons"></i>
+                    <a href="www.linkedin.com/in/ahmed-azzam-dev" class="arrow-link text-white-50 text-decoration-none">ahmedazzam@linked</a>
+                  </div>
+                </li>
+
+                <li class="nav-item mb-4 text-capitalize my-nav-item">
+                  <div class="nav-link p-0 text-white-50 my-footer-link">
+                    <i class="fa-solid fa-clock pe-1 footer-contact-icons"></i>
+                    <span class="arrow-link">7:00am - 10:00pm</span>
+                  </div>
+                </li>
+
+              </ul>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="600" class="col-12 col-sm-6 col-lg-3 forth-box">
+            <p class="navbar-brand p-0 pb-lg-3 brand fs-3 fw-bold m-0 text-white text-capitalize">newsletter</p>
+
+            <div class="pt-2 my-form mb-4">
+              <label for="subscribe" class="form-label text-white-50 text-capitalize footer-form-label">subscribe for latest updates</label>
+              <input type="email" class="form-control email text-white-50 p-0 m-0" id="subscribe" placeholder="Enter Your Email">
+            </div>
+
+            <div class="py-2">
+              <a href="#" class="main-link text-capitalize rounded-pill">subscribe</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="credit py-4">
+        <div class="container-fluid">
+          <h5 class="text-white-50 p-0 my-0 text-center credit-content text-capitalize" href="#">created by 
+            <a href="www.linkedin.com/in/ahmed-azzam-dev" class="creatre text-decoration-none">Ahmed Azzam</a> | all rights reserved!</h5>
+        </div>
+    </div>
+    <!-- end footer section -->
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- animate on scroll -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      AOS.init({
+        offset: 150, 
+        duration: 750,
+        throttleDelay: 85,
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,552 @@
+// landing page start
+.landing-page {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../../../imgs/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    margin: 6rem auto auto !important;
+    border-radius: 1rem;
+    width: 90%;
+    
+    .container {
+        span {
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 1px $white;
+            font-size: 4vw;
+            display: block;
+        }
+        p{
+            max-width: 46rem;
+            margin: 1rem auto 2rem;
+            font-size: 1.2rem;
+            line-height: 1.7;
+        }
+    }
+}
+// landing page end
+
+// booking form section start
+
+.book-form {
+
+    width: 80%;
+    min-height: 10rem;
+    margin: -3rem auto 1rem;
+    background: $bg-color;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, .7);
+
+    form {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        padding: 1.2rem;
+
+        & * input {
+            width: 100%;
+        }
+        
+        .input-box {
+            
+            flex: 1 0 15rem;
+
+            .form-label {
+                display: block;
+                font-size: 1.2rem;
+                margin-left: 1rem;
+                color: $secondary;
+                margin-top: 1rem;
+            }
+            input {
+                caret-color: $white;
+                padding: 9px 20px 13px;
+                border-radius: 5rem;
+                border: $border;
+                font-size: 1.2rem;
+                background-color: transparent;
+                color: $secondary;
+                outline: none !important;
+                &:active {
+                    outline: none;
+                }
+            }
+        }
+        .btn-submit{
+            flex: 1 0 10rem;
+            width: 100%;
+        }
+        .my-badge{
+            font-size: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// booking form section end
+
+// start about section
+
+.about {
+
+    .about-container {
+
+        .my-indicators{
+            bottom: -50px;
+
+            .circle-indicator{
+                width: 20px;
+                height: 20px;
+                margin: 0 10px;
+                border-radius: 50%;
+                opacity: 1 !important;
+                transition: $transition;
+                &:hover, &.active {
+                    background-color: $primary;
+                }
+            }
+        }
+
+        .my-video-slider{
+            flex-basis: 50%;
+            .my-video-container{
+                padding: 10px;
+                .video {
+                    max-width: 100%;
+                    border-radius: 11px;
+                }
+            }
+        }
+
+        .video-content{
+            flex-basis: 50%;
+            padding: 10px;
+
+            .above-head-video {
+                color: $primary;
+            }
+            .head-video{
+                padding: .4rem 0 0.5rem;
+                font-size: 2.8rem;
+            }
+            .video-p{
+                line-height: 1.8;
+            }
+            .video-link{
+                display: inline-block;
+                margin-top: 0.6rem;
+            }
+        }
+    }
+
+}
+
+// end about section
+
+// start our services section
+
+.services {
+    .services-container {
+        .box {
+
+            .my-card {
+                border: 2px solid $bg-color;
+                padding: 30px;
+                transition: 0.1s;
+                .font-awesome-service{
+                    color: $primary;
+                }
+                &:hover {
+                    border-color :$primary;
+                }
+            }
+
+            .service-card-content{
+                padding-bottom: 0 !important;
+
+                .my-card-head {
+                    margin: 0 !important;
+                }
+                .my-card-text {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+// end our services section
+
+// start our gallery section
+
+.gallery {
+    .box {
+        columns: 15rem 3;
+    }
+    .gallery-container{
+        .image-container{
+            break-inside: avoid;
+            margin-bottom: 1rem;
+
+            .img-in-gallery{
+                border-radius: 0.7rem;
+                width: 100%;
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
+}
+
+// start our gallery section
+
+// start our destination section
+
+.testimonial{
+    .testimonial-box{
+        .testimonial-content{
+            flex: 1 1 12rem;
+            .heading-section{
+                padding-bottom: 10px !important;
+            }
+            .testimonial-head-text{
+                line-height: 1.8;
+            }
+        }
+        .testimonial-cards{
+            
+            flex: 1 1 13rem;
+
+            padding: 25px 0 25px 25px;
+
+            .my-card{
+                padding: 20px;
+                border: 2px solid $bg-color;
+                transition: $transition;
+
+                &:hover {
+                    border-color: $primary;
+                }
+                .user-text{
+                    font-size: 0.99rem;
+                    padding-bottom: 10px !important;
+                    line-height: 1.7;
+                }
+                .user-content{
+                    
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    
+                    .user-content{
+                        .user-title{
+                            font-size: 1.13rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end our destination section
+
+// start our blog section
+
+.blog {
+    .blog-container {
+        .blog-card {
+            .card-links {
+                font-size: 1rem;
+                .blog-link {
+                    transition: $transition;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .font-awesome-blog{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+// start our blog section
+
+// start adventures section
+
+.adventure {
+    margin: 3.5rem 0 2rem;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../../../imgs/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .adventure-container{
+        padding: 3rem 2rem;
+
+        .adventure-content{
+            max-width: 600px;
+            .heading-section-container{
+                .heading-section{
+                    padding-bottom: 0 !important;
+                }
+                .adventure-head-text{
+                    color: #ffffff9e !important;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+}
+
+// end adventures section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    // book section
+    .btn-submit {
+        margin-bottom: 15px;
+    }
+    // book section
+
+    // media about section start
+    .about {
+
+        .about-container {
+
+            .my-video-slider{
+                flex-basis: 60%;
+                .my-video-container{
+                    padding: 10px;
+                    .video {
+                        max-width: 100%;
+                        border-radius: 11px;
+                    }
+                }
+            }
+    
+            .video-content{
+                flex-basis: 40%;
+    
+                .head-video{
+                    padding: .2rem 0 0.3rem;
+                    font-size: 2.5rem;
+                }
+                .video-p{
+                    line-height: 1.6;
+                }
+                .video-link{
+                    display: inline-block;
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+    
+    }
+    // media about section end
+}
+
+@media (max-width: 1008px) {
+
+    // book section
+    .book-form{
+        form {
+            .btn-submit {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    // book section
+}
+
+@media (max-width: 992px) {
+    // media about section start
+    .about {
+
+        .about-container {
+
+            .my-video-slider{
+                min-width: 100%;
+                .my-video-container{
+                    .video {
+                        max-width: 100%;
+                        border-radius: 11px;
+                    }
+                }
+            }
+    
+            .video-content{
+                
+                min-width: 100%;
+                margin-top: 3rem;
+                .head-video{
+                    padding: .2rem 0 0.3rem;
+                    font-size: 2.5rem;
+                }
+                .video-p{
+                    line-height: 1.6;
+                }
+            }
+        }
+    
+    }
+    // media about section end
+
+    // media testimonials section
+    
+    .testimonial{
+        .testimonial-box{
+            
+            .testimonial-cards{
+                .my-card{
+                    padding: 15px;
+                    .user-text{
+                        font-size: 0.83rem;
+                    }
+                    .user-content{
+                        .user-content{
+                            img{
+                                width: 44px;
+                                height: 44px;
+                            }
+                            .user-title{
+                                letter-spacing: 1px;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // media testimonials section
+}
+
+@media (max-width: 851px) {
+
+    .testimonial{
+        .testimonial-box{
+            flex-wrap: wrap;
+            .testimonial-content{
+                flex-basis: 100%;
+                .testimonial-head-text{
+                    line-height: 1.7;
+                }
+            }
+            .testimonial-cards{
+                padding: 0;
+    
+                .my-card{
+                    padding: 20px;
+                    border: 2px solid $bg-color;
+                    transition: $transition;
+    
+                    &:hover {
+                        border-color: $primary;
+                    }
+                    .user-text{
+                        font-size: 0.99rem;
+                        padding-bottom: 10px !important;
+                        line-height: 1.7;
+                    }
+                    .user-content{
+                        
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        
+                        .user-content{
+                            .user-title{
+                                font-size: 1.13rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    // media landing-page section start
+    .landing-page {
+        margin-top: 1rem;
+        .container {
+            span {
+                letter-spacing: 1.5px;
+                font-size: 5.5vw;
+            }
+            h1 {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+    // media landing-page section end
+}
+
+@media (max-width: 585px) {
+    // start book form sectoin
+    .book-form{
+        form {
+            .input-box:not(:first-of-type) {
+                .form-label {
+                    margin-top: .3rem;
+                }
+            }
+            .btn-submit {
+                display: inline;
+                margin: 1rem 0 1.3rem !important;
+            }
+        }
+    }
+    // end book form section
+}
+
+@media (max-width: 560px) {
+    .about {
+
+        .about-container {
+            .video-content{
+                margin-top: 3rem;
+                .head-video{
+                    padding: .3rem 0 0.5rem;
+                    font-size: 2rem;
+                }
+                .video-p{
+                    font-size: 1.1rem;
+                    line-height: 1.8;
+                }
+                .video-link{
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    
+    }
+}

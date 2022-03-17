@@ -1,0 +1,38 @@
+header {
+  nav {
+    padding: 12px 0 !important;
+    transition: $transition;
+    background-color: $bg-color;
+    .mycontainer {
+        
+      .show-with-transition {
+        transition: $transition;
+      }
+
+      .paper-icon {
+        color: $primary;
+      }
+
+      .brand {
+        letter-spacing: 1px;
+      }
+      .ulLinks {
+        li {
+          a {
+            padding: 10px 0 !important;
+            transition: 0.3s !important;
+            font-weight: 400;
+            font-size: 1.15rem;
+            &.active {
+              color: $primary;
+            }
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

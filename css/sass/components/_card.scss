@@ -1,0 +1,51 @@
+.box{
+    .my-card{
+        background-color: $bg-color;
+        border-radius: 0.7rem;
+        
+        .image-container{
+            width: 100%;
+            height: 15rem;
+            overflow: hidden;
+            border-top-left-radius: 0.7rem;
+            border-top-right-radius: 0.7rem;
+            .my-card-img{
+                transition: $transition;
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }    
+        }
+
+        .card-content{
+            
+            .my-card-head {
+                font-size: 1.4rem;
+            }
+            .my-card-text{
+                line-height: 1.8;
+            }
+
+            .card-link-container {
+                color: $primary;
+                .card-link{
+                    color: $primary;
+                }
+                .my-arrow-right{
+                    padding-left: 5px;
+                    transition: $transition;
+                }
+                &:hover {
+                    .my-arrow-right {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .my-card-img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
