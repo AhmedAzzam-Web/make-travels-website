@@ -168,8 +168,8 @@ header nav .mycontainer .ulLinks li a:hover {
 }
 
 .landing-page {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../../imgs/home-bg.png);
-  background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../../imgs/home-bg.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../imgs/home-bg.png);
+  background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../imgs/home-bg.png);
   background-size: cover;
   background-position: center;
   min-height: 80vh;
@@ -431,8 +431,8 @@ header nav .mycontainer .ulLinks li a:hover {
 
 .adventure {
   margin: 3.5rem 0 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../../imgs/banner-bg.png) no-repeat;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../../imgs/banner-bg.png) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../imgs/banner-bg.png) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../imgs/banner-bg.png) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
