@@ -1,14 +1,19 @@
 .main-link {
   text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: $primary;
-    border: $border;
-    padding: 9px 30px 11px 30px !important;
-    transition: $transition;
-    background-color: transparent;
-    &:hover {
-      color: $black !important;
-      background-color: $primary;
-    }
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: $primary;
+  border: $border;
+  padding: 9px 30px 11px 30px !important;
+  transition: $transition;
+  background-color: transparent;
+  &:hover {
+    color: $black !important;
+    background-color: $primary;
   }
+}
+@media (max-width: 768px) {
+  .main-link {
+    padding: 9px 25px !important;
+  }
+}
